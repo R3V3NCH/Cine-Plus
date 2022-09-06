@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/login-access.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="short icon" type="" href="pictures/logo.png">
+	<title>Cine +</title>
+</head>
+<body class="body-login">
+	<div class="container">
+		<div class="bg-img"></div>
+		<div class="content">
+			<form class="content-login">
+				<div>
+					<input type="email" id="email" name="email" placeholder="Usuario o correo" />
+					<input type="password" id="password" name="password" placeholder="Contraseña" maxlength="10"/>
+				</div>
+				<input type="button" onclick="access_login()" value="Iniciar sesión">
+			</form>
+			<p>¿Nuevo en Cine Plus? <a href="register.html">Regístrate ahora</a></p>
+			<img src="pictures/logo.png" width="60" align="center" />
+		</div>
+	</div>
+</body>
+</html>

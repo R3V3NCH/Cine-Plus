@@ -1,0 +1,179 @@
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgba(8, 8, 8, 0.65), rgba(37, 37, 37, 0.65)), url(../pictures/colage.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+/*FORMULARIO LOGIN-INICIO DE SESION-index.hrml*/
+.container {
+	position: relative;
+	width: 295px;
+	height: 500px;
+	background: #121212;
+	border-radius: 20px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
+	overflow: hidden;
+}
+
+.bg-img {
+	position: absolute;
+	top: -60px;
+	width: 100%;
+	height: 300px;
+	background: url(../pictures/conjuro.jpg) center / cover;
+}
+
+.container::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: linear-gradient(to top, #0e0c0c 65%, transparent);
+}
+
+.content {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.content-login {
+	width: 260px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.content-login input {
+	border: none;
+	height: 40px;
+	outline: none;
+	border-radius: 2px;
+}
+
+.content-login input[type=email], input[type=password] {
+	width: 260px;
+	margin: 5px 0;
+	background: #333333;
+	padding: 0 10px;
+}
+
+.content-login input::placeholder {
+	font-family: 'Poppins', sans-serif;
+}
+
+.content-login input[type=button] {
+	background-color: #546E49;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+.content p{
+	width: 260px;
+	color: #737373;
+	font-size: 13px;
+}
+
+.content p a {
+	text-decoration: none;
+	color: #fff;
+}
+/*FIN*/
+/*FORMULARIO DE REGISTRO DE NUEVOS USUARIOS-register.html*/
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: #0e0c0c;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 6);
+	border-radius: 10px;
+	text-align: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.login-box {
+		width: 90%;
+	}
+}
+
+.login-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.login-box .user-box {
+	position: relative;
+}
+
+.login-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.login-box input {
+	border: none;
+	height: 40px;
+	outline: none;
+	border-radius: 2px;
+	width: 100%;
+}
+
+.login-box input[type=text], input[type=email], input[type=password] {
+	margin: 5px 0;
+	background: #333333;
+	padding: 0 10px;
+	color: rgb(160, 158, 158);
+	font-size: 14px;
+}
+
+.login-box input::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+.login-box input[type="button"] {
+	margin: 20px 0;
+	margin-bottom: 30px;
+	background-color: #546E49;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+/*FIN*/
